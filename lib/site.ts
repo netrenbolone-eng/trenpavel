@@ -5,7 +5,7 @@ export const LINKS = {
   guide: "https://trenpavel.framer.ai/",
   telegram: "https://t.me/trenviet",
   instagram: "https://www.instagram.com/tren.pavel/",
-  tiktok: "https://www.tiktok.com/@tren.pavel",
+  tiktok: "https://www.tiktok.com/@trenpavel",
 } as const;
 
 export interface Step {
