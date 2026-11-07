@@ -14,7 +14,15 @@ const config: Config = {
         paged: { raw: "(min-width: 1024px) and (min-height: 720px)" },
       },
       colors: {
-        ink: "#0a0a0a",
+        ink: "#10120f",
+        surface: "#191c17",
+        "surface-raised": "#22271e",
+        line: "#34392e",
+        paper: "#f3f5ec",
+        muted: "#c3cabd",
+        olive: "#8fa36f",
+        accent: "#c5f65a",
+        "accent-hover": "#d6ff80",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
@@ -25,14 +33,9 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(8px)" },
         },
-        glow: {
-          "0%, 100%": { opacity: "0.45" },
-          "50%": { opacity: "0.9" },
-        },
       },
       animation: {
         float: "float 2.4s ease-in-out infinite",
-        glow: "glow 7s ease-in-out infinite",
       },
     },
   },

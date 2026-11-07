@@ -1,10 +1,11 @@
 // Замените ссылки-заглушки на свои.
 export const LINKS = {
-  messenger: "https://t.me/your_username",
-  guide: "https://t.me/your_channel",
-  telegram: "https://t.me/your_channel",
-  instagram: "https://instagram.com/your_account",
-  youtube: "https://youtube.com/@your_channel",
+  messenger: "https://t.me/trenpavel",
+  bot: "https://t.me/Trenpavel_bot",
+  guide: "https://trenpavel.framer.ai/",
+  telegram: "https://t.me/trenviet",
+  instagram: "https://www.instagram.com/tren.pavel/",
+  tiktok: "https://www.tiktok.com/@tren.pavel",
 } as const;
 
 export interface Step {
@@ -38,13 +39,11 @@ export const STEPS: readonly Step[] = [
 
 export const PLAN = {
   name: "Персональное онлайн-ведение",
-  price: "10 000",
+  price: "3 000",
   currency: "₽",
   features: [
-    "Анализ целей, образа жизни и стартовых данных",
-    "Индивидуальный план тренировок и питания",
-    "Разбор техники по видео",
-    "Регулярная калибровка плана",
-    "Связь с тренером в мессенджере",
+    "Начинаем с твоих целей, опыта и текущих условий",
+    "Подбираем формат ведения под задачи и ритм жизни",
+    "Все нюансы и итоговую стоимость обсуждаем до старта",
   ],
 } as const;

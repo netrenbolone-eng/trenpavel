@@ -8,18 +8,17 @@ export const stagger = (delayChildren = 0.1, staggerChildren = 0.09): Variants =
 });
 
 export const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 28, filter: "blur(8px)" },
+  hidden: { opacity: 0, y: 16 },
   show: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 0.8, ease: EASE },
+    transition: { duration: 0.55, ease: EASE },
   },
 };
 
 export const lineReveal: Variants = {
   hidden: { y: "110%" },
-  show: { y: "0%", transition: { duration: 0.9, ease: EASE } },
+  show: { y: "0%", transition: { duration: 0.65, ease: EASE } },
 };
 
 export const viewportOnce = { once: true, amount: 0.2 } as const;

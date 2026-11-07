@@ -6,24 +6,38 @@ import "./globals.css";
 
 const sans = Inter({
   subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600"],
   variable: "--font-sans",
   display: "swap",
 });
 
 const mono = JetBrains_Mono({
   subsets: ["latin", "cyrillic"],
+  weight: ["400", "500"],
   variable: "--font-mono",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "BODYSUPPORT — фитнес, который подстраивается под тебя",
+  title: {
+    default: "TREN.PAVEL — фитнес, который подстраивается под тебя",
+    template: "%s | TREN.PAVEL",
+  },
   description:
     "Персональное онлайн-ведение по фитнесу: научный подход, индивидуальный план, личный контроль по видео и регулярная калибровка.",
+  applicationName: "TREN.PAVEL",
+  openGraph: {
+    title: "TREN.PAVEL — фитнес, который подстраивается под тебя",
+    description:
+      "Персональное онлайн-ведение по фитнесу: индивидуальные тренировки и питание под твои цели.",
+    siteName: "TREN.PAVEL",
+    locale: "ru_RU",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0a",
+  themeColor: "#10120f",
   colorScheme: "dark",
 };
 

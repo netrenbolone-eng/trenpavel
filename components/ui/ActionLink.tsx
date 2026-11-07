@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
-type ActionVariant = "primary" | "ghost";
+type ActionVariant = "primary" | "ghost" | "dark";
 
 interface ActionLinkProps {
   href: string;
@@ -14,12 +14,13 @@ interface ActionLinkProps {
 }
 
 const base =
-  "group relative inline-flex h-14 items-center justify-center gap-3 overflow-hidden rounded-full px-8 font-mono text-xs font-medium uppercase tracking-[0.18em] transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white";
+  "group relative inline-flex h-14 items-center justify-center gap-3 overflow-hidden rounded-full px-8 font-mono text-sm font-medium uppercase tracking-[0.12em] transition-colors duration-300";
 
 const styles: Record<ActionVariant, string> = {
-  primary: "bg-white text-ink hover:bg-neutral-200",
+  primary: "bg-accent text-ink hover:bg-accent-hover",
   ghost:
-    "border border-white/20 text-white backdrop-blur-md hover:border-white/50 hover:bg-white/[0.06]",
+    "border border-line text-paper hover:border-accent/70 hover:bg-accent/5",
+  dark: "bg-ink text-paper hover:bg-surface-raised focus-visible:outline-ink",
 };
 
 export default function ActionLink({
